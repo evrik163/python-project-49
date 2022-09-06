@@ -4,10 +4,11 @@ version = "0.1.0"
 description = ""
 authors = ["evrik163 <evrik163@mail.ru>"]
 readme = "README.md"
-packages = [ {include = "brain_games"}, ]
+packages = [ {include = "brain_games"},]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+prompt = "^0.4.1"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
