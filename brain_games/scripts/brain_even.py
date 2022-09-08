@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 import prompt
 import random
+from brain_games.scripts.brain_games import main
+
 
 def welcome_user():
     print('Welcome to the Brain Games!')
@@ -10,6 +12,7 @@ def welcome_user():
 
 
 welcome_user()
+
 
 def even_check():
     n = 1
