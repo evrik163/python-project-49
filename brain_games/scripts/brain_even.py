@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import prompt
 import random
-from brain_games.scripts.brain_games import main
 
 
 def welcome_user():
@@ -25,6 +24,6 @@ def even_check():
         elif random_number % 2 != 0 and answer == 'no':
             print('Correct!')
         else:
-            print(f'''\'yes\' is wrong answer ;\'(\'. Correct answer was 'no'.\n Let's try again, {name}!''')
+            print(f'''\'yes\' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}!''')
             break
         n = n + 1

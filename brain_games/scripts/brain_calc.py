@@ -4,7 +4,14 @@ import random
 from brain_games.scripts.brain_games import main
 
 
-main()
+def welcome_user():
+    print('Welcome to the Brain Games!')
+    global name
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!')
+
+
+welcome_user()
 
 
 def calc():
@@ -20,6 +27,6 @@ def calc():
         if int(answer) == int(result):
             print('Correct!')
         else:
-            print(f'''\'{answer}\'is wrong answer ;\'(\'. Correct answer was \'{result}\' ''')
+            print(f'''\'{answer}\'is wrong answer ;(. Correct answer was \'{result}\'.\nLet's try again, {name}!''')
             break
         n = n + 1
