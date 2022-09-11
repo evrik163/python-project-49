@@ -1,10 +1,12 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "my first project"
 authors = ["evrik163 <evrik163@mail.ru>"]
 readme = "README.md"
 packages = [ {include = "brain_games"},]
+classifiers = [ "Topic :: Software Development :: Build Tools", "Topic :: Software Development :: Libraries :: Python Modules"]
+repository = "https://github.com/evrik163/python-project-49"
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -18,7 +20,7 @@ brain-gcd = "brain_games.scripts.brain_gcd:gcd"
 brain-progression = "brain_games.scripts.brain_progression:prog"
 brain-prime = "brain_games.scripts.brain_prime:fin"
 
-[tool.poetry.group.dev.dependencies]
+[tool.poetry.dev-dependencies]
 flake8 = "^5.0.4"
 
 [build-system]
