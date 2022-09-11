@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import prompt
 import random
-from brain_games.scripts.brain_games import main
 
 
 def welcome_user():
@@ -26,6 +25,8 @@ def calc():
         answer = prompt.string('Your answer: ')
         if int(answer) == int(result):
             print('Correct!')
+            if n == 3:
+                print(f"Congratulations, {name}!")
         else:
             print(f'''\'{answer}\'is wrong answer ;(. Correct answer was \'{result}\'.\nLet's try again, {name}!''')
             break
