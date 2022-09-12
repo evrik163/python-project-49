@@ -30,6 +30,8 @@ def even_check():
                 print(f"Congratulations, {name}!")
         elif random_number % 2 != 0 and answer == 'no':
             print('Correct!')
+            if n == 3:
+                print(f"Congratulations, {name}!")
         else:
             print(f'''\'{answer}\' is wrong answer ;(. Correct answer was '{right_result}'.\nLet's try again, {name}!''')
             break

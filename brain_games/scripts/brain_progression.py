@@ -28,7 +28,8 @@ def prog():
             i = i + 1
         result = my_list[int3]
         my_list[int3] = '..'
-        print(f'Question: {my_list}')
+        string = ' '.join(str(x) for x in my_list)
+        print(f'Question: {string}')
         answer = prompt.string('Your answer: ')
         if int(result) == int(answer):
             print('Correct!')

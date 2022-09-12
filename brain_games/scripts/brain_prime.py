@@ -38,6 +38,8 @@ def fin():
                 print(f"Congratulations, {name}!")
         elif len(lits) > 2 and answer == 'no':
             print('Correct!')
+            if n == 3:
+                print(f"Congratulations, {name}!")
         else:
             print(f'''\'{answer}\'is wrong answer ;(. Correct answer was \'{right_answer}\'.\nLet's try again, {name}!''')
             break
