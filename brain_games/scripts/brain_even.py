@@ -13,11 +13,12 @@ def welcome_user():
 welcome_user()
 
 
-def even_check():
+def even_check():  # noqa: C901
     n = 1
     while n <= 3:
         random_number = random.randint(1, 100)
-        print(f'''Answer "yes" if the number is even, otherwise answer "no".\nQuestion: {random_number}''')
+        print('''Answer "yes" if the number is even, otherwise answer "no".\n'''
+              f'Question: {random_number}')
         answer = prompt.string('Your answer: ')
         right_result = ''
         if random_number % 2 == 0:
@@ -33,6 +34,8 @@ def even_check():
             if n == 3:
                 print(f"Congratulations, {name}!")
         else:
-            print(f'''\'{answer}\' is wrong answer ;(. Correct answer was '{right_result}'.\nLet's try again, {name}!''')
+            print(f'\'{answer}\' is wrong answer ;(.'
+                  f''' Correct answer was '{right_result}'.\n'''
+                  f'''Let's try again, {name}!''')
             break
         n = n + 1

@@ -37,6 +37,7 @@ def prog():
                 print(f"Congratulations, {name}!")
             n = n + 1
         else:
-            print(f'''\'{answer}\'is wrong answer ;(. Correct answer was \'{result}\'.
-Let's try again, {name}!''')
+            print(f'''\'{answer}\' is wrong answer ;(.'''
+                  f''' Correct answer was \'{result}\'.\n'''
+                  f'''Let's try again, {name}!''')
             break

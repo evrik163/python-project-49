@@ -15,19 +15,22 @@ welcome_user()
 
 def calc():
     n = 1
-    while n <= 3: 
+    while n <= 3:
         int1 = random.randint(1, 100)
         int2 = random.randint(1, 100)
-        list = ['+','-','*']
+        list = ['+', '-', '*']
         oper = random.choice(list)
         result = eval(f'{int1} {oper} {int2}')
-        print(f'What is the result of the expression?\nQuestion: {int1} {oper} {int2}')
+        print('What is the result of the expression?\n'
+              f'Question: {int1} {oper} {int2}')
         answer = prompt.string('Your answer: ')
         if int(answer) == int(result):
             print('Correct!')
             if n == 3:
                 print(f"Congratulations, {name}!")
         else:
-            print(f'''\'{answer}\'is wrong answer ;(. Correct answer was \'{result}\'.\nLet's try again, {name}!''')
+            print(f'''\'{answer}\' is wrong answer ;(.'''
+                  f' Correct answer was \'{result}\'.\n'
+                  f'''Let's try again, {name}!''')
             break
         n = n + 1

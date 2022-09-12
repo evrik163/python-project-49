@@ -9,10 +9,12 @@ def welcome_user():
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
 
+
 welcome_user()
 
-def fin():
-    print(f'''Answer "yes" if given number is prime. Otherwise answer "no".''')
+
+def fin():  # noqa: C901
+    print('''Answer "yes" if given number is prime. Otherwise answer "no".''')
     n = 1
     while n <= 3:
         random_number = random.randint(1, 100)
@@ -30,7 +32,7 @@ def fin():
         right_answer = ''
         if len(lits) == 2:
             right_answer = 'yes'
-        elif len (lits) > 2:
+        elif len(lits) > 2:
             right_answer = 'no'
         if len(lits) == 2 and answer == 'yes':
             print('Correct!')
@@ -41,6 +43,8 @@ def fin():
             if n == 3:
                 print(f"Congratulations, {name}!")
         else:
-            print(f'''\'{answer}\'is wrong answer ;(. Correct answer was \'{right_answer}\'.\nLet's try again, {name}!''')
+            print(f'''\'{answer}\' is wrong answer ;(.'''
+                  f''' Correct answer was \'{right_answer}\'.\n'''
+                  f'''Let's try again, {name}!''')
             break
         n = n + 1
